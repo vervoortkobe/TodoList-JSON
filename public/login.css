@@ -1,0 +1,47 @@
+body { display: flex; justify-content: center; align-items: center; }
+.login-form {
+  display: block;
+  justify-content: center;
+  border: 1px solid #45a3fb; 
+  border-radius: 4px; 
+  padding: 4vh;
+  width: 60vw;
+  min-height: 50vh;
+}
+.login-form form, .adlogin { display: flex; flex-wrap: wrap; justify-content: center; }
+.login-form h1 { text-align: center; margin-top: -1.5vh; }
+.login-form form #username, 
+.login-form form #password, 
+.dlogin { margin-top: 2vh; width: 40vw; }
+.login-form form #login, 
+.login-form form #register { width: 20vw; text-align: center; padding: 0vw; }
+/*.login-form form #password {
+  display: inline;
+  width: 14vw;
+}*/
+.login-form form #login, 
+.login-form form #register { font-weight: bold; margin-top: 5vh; }
+.dlogin {
+  user-select: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 100%;
+}
+hr { margin-top: 3vh; }
+i { cursor: pointer; }
+@media (min-width: 800px) {
+  .login-form { width: 40vw; }
+  .login-form form #username, 
+  .login-form form #password, 
+  .dlogin { width: 30vw; }
+  .login-form form #login, 
+  .login-form form #register { width: 15vw; }
+}
+@media (min-width: 1200px) {
+  .login-form { width: 25vw; }
+  .login-form form #username, 
+  .login-form form #password, 
+  .dlogin { width: 20vw; }
+  .login-form form #login, 
+  .login-form form #register { width: 10vw; }
+}
